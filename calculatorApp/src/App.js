@@ -1,13 +1,11 @@
 import React from 'react';
-import {LogBox, Text} from 'react-native';
-
-LogBox.ignoreAllLogs();
+import {VerifyContextProvider, Calculator} from './components';
 
 const App = () => {
   return (
-    <>
-      <Text>here</Text>
-    </>
+    <VerifyContextProvider>
+      <Calculator />
+    </VerifyContextProvider>
   );
 };
 
